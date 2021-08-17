@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 16px(UA) = 100% (UA) */
+    font-size: 62.5%;
+    --nav-color:navy;
+    /* --bg-pedido: #ffc107; */
+}
+
+body {
+    font-size: 1.6rem ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+    width: 100%;
+}
+
+.cliente{
+    display: block;
+    text-align: center;
+}
+.pedido {
+    display: block;
+    width: clamp(40%);
+}
