@@ -27,35 +27,39 @@
             </nav>
         </header>
         
-    
-    <section>
-        <p class="h2">Novo Pedido</p>
-        <a href="#">
-            <p class="h2">Novo Cliente</p>
-        </a>
-        <p class="h2">Novo Produto</p>
-        <p class="h2">Pedidos</p>
         
-        <%- include(`parts/${page}`) %>
-    </section>
-    
-    <!-- Modal -->
-    <section>
-        <div class="modal-wrapper">
-            <div class="modal">
-                <form action="#" method="POST">
-                    <label for="nome">Cliente:</label>
-                    <input type="text" placeholder="Insira o nome">
-                </form>
+        <section>
+            <main>
+                <p class="h2">Novo Pedido</p>
+                <a href="#">
+                    <p class="h2">Novo Cliente</p>
+                </a>
+                <p class="h2">Novo Produto</p>
+                <p class="h2">Pedidos</p>
                 
-                <div class="buttons">
-                    <div class="button">Cancelar</div>
-                    <button class="blue">Salvar</button>
+                <%- include(`parts/${page}`) %>
+                
+            </main>
+            
+        </section>
+        <!-- Modal -->
+        <section>
+            <div class="mb-3">
+                <div class="">
+                    <form action="#" method="POST">
+                        <label for="nome" class="form-label">Cliente:</label>
+                        <input type="text" placeholder="Nome do Cliente" class="form-control" name="cliente">
+                    </form>
+                    
+                    <div class="buttons">
+                        <div class="btn btn-secondary">Cancelar</div>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+        
+        
     </div>
     
 </body>
