@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+a:visited, a:hover {
+    text-decoration: none;
+}
+
 html {
     /* 1rem = 16px(UA) = 100% (UA) */
     font-size: 62.5%;
@@ -23,10 +27,8 @@ body {
 }
 
 .cliente{
-    display: block;
-    text-align: center;
+    display: flex;
 }
 .pedido {
     display: block;
-    width: clamp(40%);
 }
