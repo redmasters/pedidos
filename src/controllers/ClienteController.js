@@ -10,7 +10,12 @@ module.exports = {
         let clienteId
         let isCliente = true
 
-        while
+        while (isCliente) {
+            // Gera o nr do Cliente
+            for(var i = 0; i < 6; i++) {
+                i == 0 ? clienteId = i
+            }
+        }
     }
   
 }
