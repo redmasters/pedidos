@@ -4,50 +4,45 @@
 const Database = require('../db/config')
 
 module.exports = {
-  
+    
+    // Cria Cliente
     async create(req, res) {
         // Captura o nome do cliente em Index.ejs
         const db = await Database()
         const clienteName = req.body.cliente
-        let isCliente = true
-        
-        const verificarNome = await db.all(`
-            SELECT name FROM clientes WHERE name = "${clienteName}"
-        `)
-        
-        isCliente = verificarNome.some(verificarNome => verificarNome === clienteName)
-        console.log('isCliente', isCliente)
-        console.log('VerifyNome', verificarNome)
+        // let isCliente = true
         
         
-        if (! isCliente ) {
-            await db.run(`
-            INSERT INTO clientes (
-                id,
-                name
+        await db.run(`
+        INSERT INTO clientes (
+            id,
+            name
             ) VALUES (
                 NULL,
                 "${clienteName}"
-            )
-        `)
-        } else {
-            alert('Já cadastrado')
+                )
+                
+                `)
+                
+                res.redirect(`/cliente/`)
+                
+                // res.render('cliente-cadastrado', {page: 'pedido'})
+               
+                await db.close()
+                
+            },
+            
+            // Exibe Clientes
+            async open(req, res) {
+                const db = await Database();
+                
+                const clientes = await db.all(`
+                SELECT * FROM clientes 
+                `)
+                
+                res.render("cliente", {clientes: clientes})
+            },
+
+            // Deleta Cliente
+            
         }
-        
-        res.redirect(`/cliente/`)
-        
-        await db.close()
-
-    },
-
-    async open(req, res) {
-        const db = await Database();
-        
-        const clientes = await db.all(`
-            SELECT * FROM clientes 
-            `)
-        
-        res.render("cliente", {clientes: clientes})
-    }
-  
-}

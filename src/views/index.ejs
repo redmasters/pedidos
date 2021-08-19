@@ -16,19 +16,19 @@
     <title>Pedidos Web</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark text-white">
-                <div class="navbar-brand has-background-link-dark">
-                    <h1 class="title has-text-white">
-                        <a href="/"> Pedidos Web </a>
-                    </h1>
-                </div>
-            </nav>
-        </header>
-        
-        
-        <section>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark text-white">
+            <div class="navbar-brand has-background-link-dark">
+                <h1 class="title has-text-white">
+                    <a href="/"> Pedidos Web </a>
+                </h1>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section>
+        <div class="container">
             <main>
                 <p class="h2">Novo Pedido</p>
                 <a href="#">
@@ -37,30 +37,32 @@
                 <p class="h2">Novo Produto</p>
                 <p class="h2">Pedidos</p>
                 
+                <a href="/cliente/" class="h2"> Clientes </a>
+                
                 <%- include(`parts/${page}`) %>
                 
             </main>
             
-        </section>
-        <!-- Modal -->
-        <section>
-            <div class="mb-3">
-                <div class="">
-                    <form action="/cliente" method="POST">
-                        <label for-id="cliente" class="form-label">Cliente:</label>
-                        <input type="text" placeholder="Nome do Cliente" class="form-control" name="cliente" id="cliente">
-                    
-                    <div class="buttons">
-                        <div class="btn btn-secondary">Cancelar</div>
-                        <button type="submit" class="btn btn-primary">Salvar</button>
+            <!-- </section> -->
+            <!-- Modal -->
+            <!-- <section> -->
+                <div class="mb-3">
+                    <div class="">
+                        <form action="/cliente" method="POST">
+                            <label for-id="cliente" class="form-label">Cliente:</label>
+                            <input type="text" placeholder="Nome do Cliente" class="form-control" name="cliente" id="cliente">
+                            
+                            <div class="buttons">
+                                <div class="btn btn-secondary">Cancelar</div>
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </section>
         
         
-    </div>
-    
-</body>
-</html>
+        
+    </body>
+    </html>
