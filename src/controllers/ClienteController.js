@@ -45,19 +45,13 @@ module.exports = {
 
             // Deleta Cliente
             async delete(req, res){
-              const db = await Database();
-              const clienteId = req.params.clienteId;
-              const action = req.params.action;
-                console.log(action)
-                
+              const action = req.params.delete
               if (action == "delete") {
-                //   await db.run(`
-                //       DELETE FROM clientes WHERE id = ${clienteId}
-                //   `)
-                  console.log('deletado')
+                console.log('delete')
+                console.log(action)
+                res(console.log("Delete"))
+
               }
-            
-              res.redirect('/cliente/')
                 
             }
             

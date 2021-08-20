@@ -11,4 +11,4 @@ server.use(express.urlencoded({extended: true}))
 
 server.use(route)
 
-server.listen(port, () => console.log('rodando na porta:', port))
+server.listen(port, () => console.log('rodando na porta:', port, '\n http://localhost:3000'))

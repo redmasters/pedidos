@@ -52,9 +52,11 @@
                                 
                                 <td>
                                     <div class="action">
-                                        <button class="btn btn-primary edit" >Editar</button>
+                                        <form action="#" method="POST">
+                                            <button class="btn btn-primary edit" >Editar</button>
 
-                                        <a href="#" class="btn btn-danger delete " clienteId="<%= cliente.id %>">Deletar</a>
+                                            <a href="#" class="delete" clienteId="<%= cliente.id %>">Deletar</a>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
