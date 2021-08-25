@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+a:hover {
+    text-decoration: none;
+}
+
+.content {
+    margin: 2.1rem;
+}
+
+.head-title {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.pedidos {
+    font-size: 1.5rem;
+}
+
+.list-pedidos {
+    margin-top: 2rem;
+}
+
+.card-header> ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1rem;
+    position: left;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.numb-pedido {
+    margin-right: 2rem;
+}
