@@ -19,8 +19,31 @@ body {
     font-size: 3rem;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
+.content {
+    margin: 2.1rem;
+}
+
+.head-title {
+    color: white;
+    font-size: 2.8rem;
+}
+
+.pedidos {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.list-pedidos, .pedido {
+    margin-top: 2rem;
+}
+
 .pedido {
-    margin-top: 3rem;;
     font-family: Inter;
     font-weight: normal;
     font-size: 1.3rem;
@@ -40,27 +63,6 @@ body {
     font-family: Inter;
     font-weight: normal;
 }
-a:hover {
-    text-decoration: none;
-}
-
-.content {
-    margin: 2.1rem;
-}
-
-.head-title {
-    color: white;
-    font-size: 2.8rem;
-}
-
-.pedidos {
-    font-size: 1.5rem;
-}
-
-.list-pedidos {
-    margin-top: 2rem;
-}
-
 .card-header> ul {
     list-style-type: none;
     margin: 0;
