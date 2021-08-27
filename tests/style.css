@@ -8,6 +8,37 @@
 
 html {
     font-size: 62.5%;
+    --black: #585666
+}
+
+body {
+    color: var(--black);
+}
+
+.bd-title {
+    font-size: 3rem;
+}
+
+.pedido {
+    margin-top: 3rem;;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+.ped-title > a {
+    text-decoration: none;
+    color: var(--black);
+    
+}
+.ped-title {
+    font-size: 1.8rem;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+}
+
+.ped-cliente {
+    font-family: Inter;
+    font-weight: normal;
 }
 a:hover {
     text-decoration: none;
