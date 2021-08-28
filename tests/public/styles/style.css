@@ -15,6 +15,10 @@ body {
     color: var(--black);
 }
 
+.content {
+    height: 100vh;
+}
+
 .bd-title {
     font-size: 3rem;
 }
@@ -43,22 +47,28 @@ a:hover {
 .grid-template-columns-3 {
     grid-template-columns: 1fr 1fr;
 }
-.wrapper-pedidos {
+.wrapper-pedidos, .wrapper-produtos {
     font-size: 1.5rem;
 }
 
-.wrapper-pedidos, .pedido {
+.wrapper-pedidos, .wrapper-produtos,
+.pedido {
     margin-top: 2rem;
 }
 
-.pedido {
+.pedido, .produto {
     margin: 1rem;
 }
 
-.pedido {
+.produto {
+    display: flex;
+    align-items: center;
+}
+.pedido, .produto {
     font-family: Inter;
     font-weight: normal;
     font-size: 1.3rem;
+    width: 18rem;
 }
 .ped-title > a {
     text-decoration: none;
@@ -90,6 +100,10 @@ a:hover {
 }
 .numb-pedido {
     margin-right: 2rem;
+}
+
+.criar-pedido {
+    margin-top: 2rem;
 }
 
 .footer > a {
