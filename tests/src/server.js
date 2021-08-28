@@ -1,7 +1,7 @@
 const express = require('express')
 const server = express()
 const router = require('./router')
-const port = 3000
+const port = 3001
 const path = require('path')
 
 server.use(router)
