@@ -6,29 +6,151 @@
     box-sizing: border-box;
 }
 
-a:visited, a:hover {
-    text-decoration: none;
-}
-
 html {
-    /* 1rem = 16px(UA) = 100% (UA) */
     font-size: 62.5%;
-    --nav-color:navy;
-    /* --bg-pedido: #ffc107; */
+    --black: #000
 }
 
 body {
-    font-size: 1.6rem ;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--black);
 }
 
-.nav {
-    width: 100%;
+.content {
+    height: 100vh;
 }
 
-.cliente{
+.bd-title {
+    font-size: 3rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.content {
+    margin: 2.1rem;
+}
+
+.head-title {
+    color: white;
+    font-size: 2.8rem;
+}
+.grid {
+    display: grid;
+    max-width: 10rem;
+}
+
+.grid-template-columns {
+    grid-template-columns: 20rem 20rem;
+}
+
+.grid-template-columns-3 {
+    grid-template-columns: 1fr 1fr;
+}
+.wrapper-pedidos, .wrapper-produtos {
+    font-size: 1.5rem;
+}
+
+.wrapper-pedidos, .wrapper-produtos,
+.pedido, .produto {
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
+}
+
+
+.pedido, .produto {
+    margin: 1rem;
+}
+
+.produto {
+    margin-bottom: 2.8rem;
+}
+
+.prod-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.prod-price {
+    color: var(--black);
+}
+
+.actions {
+    width: 17.6rem;
+    margin-bottom: 1.3rem;
+    padding-top: .1rem;
     display: flex;
+    justify-content: right;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
-.pedido {
-    display: block;
+
+.actions > a {
+    padding-left: 1rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.prod-image {
+    height: 8rem;
+    width: 8rem;
+}
+
+.prod-price {
+    height: 3rem;
+    border-top: 1px solid #585666;
+    font-family: 1.2rem;
+    font-weight: 700;
+
+}
+
+.pedido, .produto {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 1.3rem;
+    width: 17.6rem;
+    height: 14.6rem;
+}
+.ped-title > a {
+    text-decoration: none;
+    color: var(--black);
+    
+}
+.ped-title {
+    font-size: 1.8rem;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+}
+
+.ped-cliente {
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.card-header> ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1rem;
+    position: left;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.numb-pedido {
+    margin-right: 2rem;
+}
+
+.criar-pedido {
+    margin-top: 2rem;
+}
+
+.footer > a {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.footer {
+    height: 10rem;
 }
