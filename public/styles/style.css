@@ -62,7 +62,7 @@ a:hover {
     margin: 1rem;
 }
 
-.produto {
+.produto, .pedido {
     margin-bottom: 2.8rem;
 }
 
@@ -103,10 +103,24 @@ a:hover {
 
 }
 
+.ped-price {
+    height: 3rem;
+    border-top: 1px solid #585666;
+    margin-top: 0.2rem;
+    font-family: 1.2rem;
+
+}
+
+.ped-price > span {
+    font-weight: 700;
+}
+
+
+
 .pedido, .produto {
     font-family: Inter;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 17.6rem;
     height: 14.6rem;
 }
@@ -116,9 +130,9 @@ a:hover {
     
 }
 .ped-title {
-    font-size: 1.8rem;
-    font-family: 'Lexend', sans-serif;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
 }
 
 .ped-cliente {

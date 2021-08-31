@@ -1,61 +1,123 @@
-  <div class="container-fluid">
-    <section>
-        <div class="content">
-          
-          <h1>Pedidos</h1> - <a href="#">Novo pedido</a>
-          <hr>
-          <!-- Lista de Pedidos -->
-          
-        <div class="wrapper-pedidos grid grid-template-columns-3">
-          <div class="pedido card">
-            <div class="card-body">
-              <h2 class="card-title ped-title">
-                <a href="#">#398394</a> - <a href="#" class="ped-cliente">Darth Vader</a>
-              </h2>
-              <p>Itens: (03)</p>
-              <hr>
-              <b>Total:</b> $ 160.000,00
+<%- include("_header") %> 
+<div class="container-fluid">
+  <section>
+    <div class="content">
+      
+      <h1>Pedidos</h1> - <a href="#">Novo pedido</a>
+      <hr>
+      <!-- Lista de Pedidos -->
+      
+      <div class="wrapper-pedidos grid grid-template-columns-3">
+        
+        <div class="pedido card">
+          <div class="card-body">
+            <h2 class="card-title ped-title">
+              <a href="#">Darth Vader - #398394</a>
+            </h2>
+            <div class="list-item">
+              <ul>
+                <li>TAE Fighter</li>
+                <li>DLT-19 Heavy Blaster</li>
+                <li>X-Wing</li>
+              </ul>
+              <span>Itens: (03)</span>
+            </div>
+            <div class="ped-price">
+              <span>Total:</span> R$160.000,00
             </div>
           </div>
-          
-          <div class="pedido card">
-            <div class="card-body">
-              <h2 class="card-title ped-title">
-                <a href="#">#398394</a> - <a href="#" class="ped-cliente">Darth Vader</a>
-              </h2>
-              <p>Itens: (03)</p>
-              <hr>
-              <b>Total:</b> $ 160.000,00
-            </div>
+          <div class="actions">
+            <a href="#">Editar</a> - 
+            <a href="#">Atualizar</a> - 
+            <a href="#">Excluir</a> 
           </div>
-          
-          <div class="pedido card">
-            <div class="card-body">
-              <h2 class="card-title ped-title">
-                <a href="#">#398394</a> - <a href="#" class="ped-cliente">Darth Vader</a>
-              </h2>
-              <p>Itens: (03)</p>
-              <hr>
-              <b>Total:</b> $ 160.000,00
-            </div>
-          </div>
-          
-          
-          <div class="pedido card">
-            <div class="card-body">
-              <h2 class="card-title ped-title">
-                <a href="#">#398394</a> - <a href="#" class="ped-cliente">Darth Vader</a>
-              </h2>
-              <p>Itens: (03)</p>
-              <hr>
-              <b>Total:</b> $ 160.000,00
-            </div>
-          </div>
-          
           
         </div>
-        <%- include(`parts/${page}`) %>
+        
+        <div class="pedido card">
+          <div class="card-body">
+            <h2 class="card-title ped-title">
+              <a href="#">Imperador P - #398394</a>
+            </h2>
+            <div class="list-item">
+              <ul>
+                <li>Milenium Falcon</li>
+                <li>Super Star Destroyer</li>
+                <li>Lightsaber</li>
+              </ul>
+              <span>Itens: (06)</span>
+            </div>
+            <div class="ped-price">
+              <span>Total:</span> R$ 4.576.550,00
+            </div>
+          </div>
+          <div class="actions">
+            <a href="#">Editar</a> - 
+            <a href="#">Atualizar</a> - 
+            <a href="#">Excluir</a> 
+          </div>
+        </div>
+        
+        
+        <div class="pedido card">
+          <div class="card-body">
+            <h2 class="card-title ped-title">
+              <a href="#">Imperador P - #398394</a>
+            </h2>
+            <div class="list-item">
+              <ul>
+                <li>Milenium Falcon</li>
+                <li>Super Star Destroyer</li>
+                <li>Lightsaber</li>
+              </ul>
+              <span>Itens: (06)</span>
+            </div>
+            <div class="ped-price">
+              <span>Total:</span> R$ 4.576.550,00
+            </div>
+          </div>
+          <div class="actions">
+            <a href="#">Editar</a> - 
+            <a href="#">Atualizar</a> - 
+            <a href="#">Excluir</a> 
+          </div>
+        </div>
+        
+        <div class="pedido card">
+          <div class="card-body">
+            <h2 class="card-title ped-title">
+              <a href="#">Imperador P - #398394</a>
+            </h2>
+            <div class="list-item">
+              <ul>
+                <li>Milenium Falcon</li>
+                <li>Super Star Destroyer</li>
+                <li>Lightsaber</li>
+              </ul>
+              <span>Itens: (06)</span>
+            </div>
+            <div class="ped-price">
+              <span>Total:</span> R$ 4.576.550,00
+            </div>
+          </div>
+          <div class="actions">
+            <a href="#">Editar</a> - 
+            <a href="#">Atualizar</a> - 
+            <a href="#">Excluir</a> 
+          </div>
+        </div>
+        
+        
+        
+        
       </div>
     </section>
+    
   </div>
- 
+  <!-- Modal -->
+  <div class="content">
+    <h1>Pedido - #398394</h1>
+    <hr>
+    
+  </div>
+  <%- include("_footer") %> 
